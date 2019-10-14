@@ -15,7 +15,7 @@ public class LoginPage extends AbstractPage {
     private WebElement passwordField;
 
     @FindBy(id = "login")
-    private WebElement submitButton;
+    private WebElement loginButton;
 
     public LoginPage(WebDriver driver) {
        super(driver);
@@ -29,7 +29,7 @@ public class LoginPage extends AbstractPage {
 
 
     public DashboardPage submitLoginForm() {
-        clickElement(submitButton);
+        clickElement(loginButton);
         return new DashboardPage(driver);
     }
 }
