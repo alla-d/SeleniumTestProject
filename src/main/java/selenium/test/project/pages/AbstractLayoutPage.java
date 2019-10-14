@@ -16,6 +16,9 @@ public abstract class AbstractLayoutPage extends AbstractPage {
     @FindBy(id="j_info_box")
     public WebElement infoBox;
 
+    @FindBy(xpath = "//html/body/aside/div/ul/li[5]/a")
+    public WebElement versionsPage;
+
     public AbstractLayoutPage(WebDriver driver){
         super(driver);
     }
@@ -31,6 +34,10 @@ public abstract class AbstractLayoutPage extends AbstractPage {
 
     public boolean isInfoBoxDisplayed(){
         return isElementDisplayed(infoBox);
+    }
 
+    public VersionsPage openVersionsPage(){
+        clickElement(versionsPage);
+        return new VersionsPage(driver);
     }
 }

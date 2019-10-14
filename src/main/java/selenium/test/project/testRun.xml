@@ -5,7 +5,7 @@
         <classes>
             <class name="selenium.test.project.tests.LoginTest" />
             <class name="selenium.test.project.tests.AddEnvironmentTest" />
-
+            <class name="selenium.test.project.tests.AddVersionTest" />
         </classes>
     </test>
 
