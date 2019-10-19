@@ -7,13 +7,16 @@ import java.util.concurrent.TimeUnit;
 
 public class AbstractWebDriver {
 
+    public static String FIREFOX_WEBDRIVER_TYPE="firefox";
+    public static String CHROME_WEBDRIVER_TYPE="chrome";
+
     protected CustomFileUtils customFileUtils;
 
     public AbstractWebDriver(){
         customFileUtils = new CustomFileUtils();
     }
 
-    public WebDriver getConfiguredDriver(
+    public static WebDriver getConfiguredDriver(
             WebDriver driver,
             long implicitlyWaitSeconds,
             boolean maximize) {

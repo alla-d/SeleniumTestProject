@@ -40,4 +40,11 @@ public abstract class AbstractLayoutPage extends AbstractPage {
         clickElement(versionsPage);
         return new VersionsPage(driver);
     }
+
+    public Integer getMaxLengthAttribute(WebElement element){
+
+        String maxLengthAttribute = element.getAttribute("maxLength");
+        return maxLengthAttribute !=  null ? Integer.parseInt(element.getAttribute("maxLength")): 0;
+    }
 }
+

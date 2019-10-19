@@ -32,4 +32,8 @@ public class AddEnvironmentPage extends AbstractLayoutPage {
         clickElement(saveButton);
         return new EnvironmentsPage(driver);
     }
+
+    public int getDescriptionMaxLenght(){
+        return getMaxLengthAttribute(descriptionField);
+    }
 }

@@ -7,7 +7,7 @@ import selenium.test.project.tests.AddEnvironmentTest;
 
 public class EnvironmentsPage extends AbstractLayoutPage {
 
-    @FindBy (xpath = "//html/body/div[1]/section/article/div[1]/nav/ul/li/a") // '//a[@href="http://beta.demo.testarena.pl/Test67/add_environment"]'
+    @FindBy (xpath = "//*[@id=\"content\"]/article/div[1]/nav/ul/li/a") // '//a[@href="http://beta.demo.testarena.pl/Test67/add_environment"]'
     private WebElement addEnvironmentButton;
 
     public EnvironmentsPage (WebDriver driver){

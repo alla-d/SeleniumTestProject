@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 public class VersionsPage extends AbstractLayoutPage {
 
 
-    @FindBy(xpath = "//a[@href='http://beta.demo.testarena.pl/Test67/add_version?filterAction=0&resultCountPerPage=&search=']")
+    @FindBy(xpath = "//*[@id=\"content\"]/article/div[1]/nav/ul/li/a") // '//a[@href="http://beta.demo.testarena.pl/Test67/versions"]' //a[@href='http://beta.demo.testarena.pl/Test67/versions']
     private WebElement addVersionButton;
 
     public VersionsPage(WebDriver driver){
