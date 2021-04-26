@@ -23,7 +23,7 @@
     <properties>
         <testng.version>7.0.0</testng.version>
         <selenium.version>3.141.59</selenium.version>
-        <apache-commons-io.version>2.6</apache-commons-io.version>
+        <apache-commons-io.version>2.7</apache-commons-io.version>
         <open-csv.version>4.6</open-csv.version>
         <log4j-core.version>2.12.1</log4j-core.version>
         <extentreports.version>2.41.2</extentreports.version>
